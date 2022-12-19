@@ -21,7 +21,11 @@ to the ```require``` section of your ```composer.json``` file.
 Subsequently, run
 
 ```
-./yii migrate/up --migrationPath=@vendor/zakharov-andrew/yii2-settings/migrations
+./yii migrate/up --migrationPath=@vendor/zakharov-andrew/yii2-pages/migrations
 ```
 
 in order to create the settings table in your database.
+
+## License
+
+**yii2-settings** it is available under a BSD 3-Clause License. Detailed information can be found in the `LICENSE.md`.
