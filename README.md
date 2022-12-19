@@ -8,12 +8,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-$ composer require zakharov-andrew/yii2-settings
+$ composer require zakharov-andrew/yii2-pages
 ```
 or add
 
 ```
-"zakharov-andrew/yii2-settings": "*"
+"zakharov-andrew/yii2-pages": "*"
 ```
 
 to the ```require``` section of your ```composer.json``` file.
