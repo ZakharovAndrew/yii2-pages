@@ -17,3 +17,11 @@ or add
 ```
 
 to the ```require``` section of your ```composer.json``` file.
+
+Subsequently, run
+
+```
+./yii migrate/up --migrationPath=@vendor/zakharov-andrew/yii2-settings/migrations
+```
+
+in order to create the settings table in your database.
