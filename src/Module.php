@@ -52,7 +52,7 @@ class Module extends \yii\base\Module
             'basePath' => '@vendor/zakharov-andrew/yii2-pages/src/messages',
             'on missingTranslation' => ['app\components\TranslationEventHandler', 'handleMissingTranslation'],
             'fileMap' => [
-                'extension/yii2-pages/settings' => 'settings.php',
+                'extension/yii2-pages/pages' => 'pages.php',
             ],
         ];
     }
@@ -70,7 +70,7 @@ class Module extends \yii\base\Module
      */
     public static function t($message, $params = [], $language = null)
     {
-        $category = 'settings';
+        $category = 'pages';
         return Yii::t('extension/yii2-pages/' . $category, $message, $params, $language);
     }
     
