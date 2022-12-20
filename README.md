@@ -1,4 +1,6 @@
 # Yii2 pages
+
+[![license](https://img.shields.io/badge/License-MIT-yellow.svg)]()
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 
 This extension allows you to add pages to your app.
