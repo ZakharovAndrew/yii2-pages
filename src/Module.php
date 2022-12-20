@@ -9,7 +9,7 @@
  * @copyright Copyright (c) 2022 Zakharov Andrew
  */
  
-namespace ZakharovAndrew\settings;
+namespace ZakharovAndrew\pages;
 
 use Yii;
 
