@@ -60,6 +60,7 @@ Add a new rule for `urlManager` of your application's configuration file, for ex
         'pages/create' => 'pages/default/create',
         'pages/update' => 'pages/default/update',
         'pages/delete' => 'pages/default/delete',
+        'p/<url:[a-zA-Z0-9\-]+>'=>'pages/view',
     ],
 ],
 ```
