@@ -6,7 +6,8 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
-use ZakharovAndrew\settings\models\Settings;
+use ZakharovAndrew\pages\models\Pages;
+use ZakharovAndrew\pages\models\PagesSearch;
 
 
 /**
@@ -31,5 +32,21 @@ class DefaultController extends Controller
                 ],
             ],
         ];
+    }
+    
+    /**
+     * Lists all Pages models.
+     *
+     * @return string
+     */
+    public function actionIndex()
+    {
+        $searchModel = new PagesSearch();
+        $dataProvider = $searchModel->search($this->request->queryParams);
+
+        return $this->render('index', [
+            'searchModel' => $searchModel,
+            'dataProvider' => $dataProvider,
+        ]);
     }
 }
