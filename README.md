@@ -51,6 +51,19 @@ return [
 ];
 ```
 
+Add a new rule for `urlManager` of your application's configuration file, for example:
+
+```php
+'urlManager' => [
+    'rules' => [
+        'pages' => 'pages/default/index',
+        'pages/create' => 'pages/default/create',
+        'pages/update' => 'pages/default/update',
+        'pages/delete' => 'pages/default/delete',
+    ],
+],
+```
+
 ## License
 
 **yii2-pages** it is available under a MIT License. Detailed information can be found in the `LICENSE.md`.
