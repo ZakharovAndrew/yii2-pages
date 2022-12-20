@@ -49,4 +49,20 @@ class DefaultController extends Controller
             'dataProvider' => $dataProvider,
         ]);
     }
+    
+    /**
+     * Finds the Pages model based on its url value.
+     * If the model is not found, a 404 HTTP exception will be thrown.
+     * @param string $url url
+     * @return Pages the loaded model
+     * @throws NotFoundHttpException if the model cannot be found
+     */
+    protected function findModelbyUrl($url)
+    {
+        if (($model = Page::findOne(['url' => $url])) !== null) {            
+            return $model;
+        }
+
+        throw new NotFoundHttpException('The requested page does not exist.');
+    }
 }
