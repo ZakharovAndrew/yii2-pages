@@ -17,6 +17,7 @@
  * NOTE: this file must be saved in UTF-8 encoding.
  */
 return [
+    'Page creation error!' => 'Ошибка создания страницы!',
     'Active' => 'Активная',
     'Are you sure you want to delete this item?' => 'Вы уверены, что хотите удалить эту запись?',
     'Create' => 'Создать',
