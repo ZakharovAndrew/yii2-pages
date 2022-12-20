@@ -8,7 +8,7 @@ use yii\filters\VerbFilter;
 use yii\web\Controller;
 use ZakharovAndrew\pages\models\Pages;
 use ZakharovAndrew\pages\models\PagesSearch;
-
+use ZakharovAndrew\pages\Module;
 
 /**
  * DefaultController implements the CRUD actions for Pages model.
@@ -51,7 +51,7 @@ class DefaultController extends Controller
     }
     
     /**
-     * Displays a single Page model.
+     * Displays a single Pages model.
      * @param int $id ID
      * @return string
      * @throws NotFoundHttpException if the model cannot be found
@@ -64,7 +64,32 @@ class DefaultController extends Controller
     }
     
     /**
-     * Updates an existing Page model.
+     * Creates a new Pages model.
+     * If creation is successful, the browser will be redirected to the 'view' page.
+     * @return string|\yii\web\Response
+     */
+    public function actionCreate()
+    {
+        $model = new Page();
+
+        if ($this->request->isPost && $model->load($this->request->post())) {
+            $model->url = ($model->url == '' ? Pages::generateUrl(trim($model->title)) : $model->url);
+            if ($model->save()) {
+                return $this->redirect(['view', 'url' => $model->url]);
+            } else {
+                Yii::$app->session->setFlash('error', Module::t('Page creation error!')); // 'Ошибка создания страницы!'
+            }
+        } else {
+            $model->loadDefaultValues();
+        }
+
+        return $this->render('create', [
+            'model' => $model,
+        ]);
+    }
+    
+    /**
+     * Updates an existing Pages model.
      * If update is successful, the browser will be redirected to the 'view' page.
      * @param int $id ID
      * @return string|\yii\web\Response
