@@ -28,6 +28,26 @@ Subsequently, run
 
 in order to create the settings table in your database.
 
+Or add to console config
+
+```php
+return [
+    // ...
+    'controllerMap' => [
+        // ...
+        'migrate' => [
+            'class' => 'yii\console\controllers\MigrateController',
+            'migrationPath' => [
+                '@console/migrations', // Default migration folder
+                '@vendor/zakharov-andrew/yii2-pages/src/migrations'
+            ]
+        ]
+        // ...
+    ]
+    // ...
+];
+```
+
 ## License
 
 **yii2-pages** it is available under a MIT License. Detailed information can be found in the `LICENSE.md`.
