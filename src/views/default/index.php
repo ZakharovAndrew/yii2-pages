@@ -6,7 +6,7 @@ use yii\grid\ActionColumn;
 use yii\grid\GridView;
 
 /* @var $this yii\web\View */
-/* @var $searchModel app\models\PageSearch */
+/* @var $searchModel ZakharovAndrew\pages\models\PageSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
 $this->title = 'Страницы';
