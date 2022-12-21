@@ -9,7 +9,7 @@ use ZakharovAndrew\pages\Module;
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
-<div class="page-form">
+<div class="pages-form">
 
     <?php $form = ActiveForm::begin(); ?>
 

@@ -1,15 +1,16 @@
 <?php
 
 use yii\helpers\Html;
+use ZakharovAndrew\pages\Module;
 
 /* @var $this yii\web\View */
 /* @var $searchModel ZakharovAndrew\pages\models\Pages */
 
-$this->title = 'Создать страницу';
-$this->params['breadcrumbs'][] = ['label' => 'Страницы', 'url' => ['index']];
+$this->title = Module::t('Create page');
+$this->params['breadcrumbs'][] = ['label' => Module::t('Pages'), 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="page-create">
+<div class="pages-create">
 
     <h1><?= Html::encode($this->title) ?></h1>
 

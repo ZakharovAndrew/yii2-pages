@@ -4,12 +4,13 @@ use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\grid\ActionColumn;
 use yii\grid\GridView;
+use ZakharovAndrew\pages\Module;
 
 /* @var $this yii\web\View */
 /* @var $searchModel ZakharovAndrew\pages\models\PagesSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = 'Страницы';
+$this->title = Module::t('Pages');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
 <div class="pages-index">
@@ -17,7 +18,7 @@ $this->params['breadcrumbs'][] = $this->title;
     <h1><?= Html::encode($this->title) ?></h1>
 
     <p>
-        <?= Html::a('Создать страницу', ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Module::t('Create page'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
