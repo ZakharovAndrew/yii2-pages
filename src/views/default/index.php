@@ -12,7 +12,7 @@ use yii\grid\GridView;
 $this->title = 'Страницы';
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="page-index">
+<div class="pages-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
 
