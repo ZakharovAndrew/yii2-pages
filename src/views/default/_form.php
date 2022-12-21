@@ -2,9 +2,10 @@
 
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use ZakharovAndrew\pages\Module;
 
 /* @var $this yii\web\View */
-/* @var $model app\models\Page */
+/* @var $searchModel ZakharovAndrew\pages\models\Pages */
 /* @var $form yii\widgets\ActiveForm */
 ?>
 
@@ -19,7 +20,7 @@ use yii\widgets\ActiveForm;
     <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton('Сохранить', ['class' => 'btn btn-success']) ?>
+        <?= Html::submitButton(Module::t('Save'), ['class' => 'btn btn-success']) ?>
     </div>
 
     <?php ActiveForm::end(); ?>
