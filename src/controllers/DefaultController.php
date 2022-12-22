@@ -70,7 +70,7 @@ class DefaultController extends Controller
      */
     public function actionCreate()
     {
-        $model = new Page();
+        $model = new Pages();
 
         if ($this->request->isPost && $model->load($this->request->post())) {
             $model->url = ($model->url == '' ? Pages::generateUrl(trim($model->title)) : $model->url);
