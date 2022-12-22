@@ -147,7 +147,7 @@ class DefaultController extends Controller
      */
     protected function findModelbyUrl($url)
     {
-        if (($model = Page::findOne(['url' => $url])) !== null) {            
+        if (($model = Pages::findOne(['url' => $url])) !== null) {            
             return $model;
         }
 
