@@ -39,6 +39,7 @@ return [
     'Save' => 'Сохранить',
     'Type' => 'Тип',
     'Pages' => 'Страницы',
+    'Content' => 'Текст страницы',
     'Update' => 'Редактировать',
     'Update page' => 'Обновить страницу',
     'Update {modelClass}: ' => 'Редактирование {modelClass}: ',
