@@ -19,6 +19,8 @@ use Yii;
 class Module extends \yii\base\Module
 {    
     public $bootstrapVersion = '';
+ 
+    public $useTranslite = false;
     
     /**
      *
