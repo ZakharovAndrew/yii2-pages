@@ -16,11 +16,11 @@ class m221204_085911_create_pages_table extends Migration
                 'title' => $this->string()->notNull(),
                 'url' => $this->string()->notNull(),
                 'content' => $this->text()->notNull(),
-                'create_at' => $this->timestamp()->notNull(),
+                'create_at' => $this->timestamp()->defaultExpression('CURRENT_TIMESTAMP'),
             ]
         );
         
-        // creates index for column `key`
+        // creates index for column `url`
         $this->createIndex(
             'idx-pages-url',
             'pages',
