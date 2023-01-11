@@ -11,7 +11,7 @@ use ZakharovAndrew\pages\Module;
 
 <div class="pages-form">
 
-    <?php $form = ActiveForm::begin(); ?>
+    <?php $form = ($bootstrapVersion == 5 ? yii\bootstrap5\ActiveForm::begin() : yii\widgets\ActiveForm::begin()); ?>
 
     <?= $form->field($model, 'title')->textInput(['maxlength' => true]) ?>
 
@@ -20,9 +20,11 @@ use ZakharovAndrew\pages\Module;
     <?= $form->field($model, 'content')->textarea(['rows' => 6]) ?>
 
     <div class="form-group">
-        <?= Html::submitButton(Module::t('Save'), ['class' => 'btn btn-success']) ?>
+        <p>
+            <?= Html::submitButton(Module::t('Save'), ['class' => 'btn btn-success']) ?>
+        </p>
     </div>
 
-    <?php ActiveForm::end(); ?>
+    <?php ($bootstrapVersion == 5 ? yii\bootstrap5\ActiveForm::end() : yii\widgets\ActiveForm::end()); ?>
 
 </div>
