@@ -51,6 +51,20 @@ return [
 ];
 ```
 
+## Usage
+
+Add this to your main configuration's modules array
+
+```
+    'modules' => [
+        'settings' => [
+            'class' => 'ZakharovAndrew\pages\Module',
+            'bootstrapVersion' => 5, // if use bootstrap 5
+        ],
+        // ...
+    ],
+```
+
 Add a new rule for `urlManager` of your application's configuration file, for example:
 
 ```php
