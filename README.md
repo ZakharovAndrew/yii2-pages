@@ -57,7 +57,7 @@ Add this to your main configuration's modules array
 
 ```
     'modules' => [
-        'settings' => [
+        'pages' => [
             'class' => 'ZakharovAndrew\pages\Module',
             'bootstrapVersion' => 5, // if use bootstrap 5
         ],
