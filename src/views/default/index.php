@@ -37,7 +37,12 @@ $this->params['breadcrumbs'][] = $this->title;
                     return Html::a($model->url, ['pages/default/view', 'url'=>$model->url]);
                 },
             ],
-            'content:ntext',
+            [
+                'attribute' => 'content',
+                'content' => function ($model) {
+                    return (mb_substr(strip_tags($model->content), 0, 50)).'...';
+                },
+            ],
             'datetime_at',
             [
                 'class' => ActionColumn::className(),
