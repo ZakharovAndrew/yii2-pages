@@ -31,7 +31,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
             'id',
             'title',
-            'url:url',
+            [
+                'attribute' => 'url',
+                'content' => function ($model) {
+                    return Html::a($model->url, ['pages/default/view', 'url'=>$model->url]);
+                },
+            ],
             'content:ntext',
             'datetime_at',
             [
