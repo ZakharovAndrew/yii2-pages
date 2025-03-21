@@ -6,7 +6,7 @@
 
 This extension allows you to add pages to your app.
 
-## Installation
+## 🚀 Installation
 
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
@@ -51,7 +51,7 @@ return [
 ];
 ```
 
-## Usage
+## 🔧 Usage
 
 Add this to your main configuration's modules array
 
