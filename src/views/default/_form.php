@@ -7,6 +7,18 @@ use ZakharovAndrew\pages\Module;
 /* @var $this yii\web\View */
 /* @var $searchModel ZakharovAndrew\pages\models\Pages */
 /* @var $form yii\widgets\ActiveForm */
+
+$this->registerJsFile('https://cdn.ckeditor.com/ckeditor5/41.1.0/classic/ckeditor.js');
+$script = <<< JS
+        
+ClassicEditor
+    .create( document.querySelector( '#pages-content' ) )
+    .catch( error => {
+        console.error( error );
+    } );
+
+JS;
+$this->registerJs($script, yii\web\View::POS_READY);
 ?>
 
 <div class="pages-form">
