@@ -7,9 +7,7 @@
 [![License](https://poser.pugx.org/zakharov-andrew/yii2-pages/license)](https://packagist.org/packages/zakharov-andrew/yii2-pages)
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
 
-⚡️ Yii2 Pages is a powerful and flexible module for creating and managing content pages in your application. It’s perfect for implementing sections like "About Us," "Contact," "Terms of Service," and other static pages.
-
-With this module, you can easily add, edit, and manage pages directly from your application's admin panel. The module provides an intuitive interface and all the necessary tools for efficient content management.
+⚡️**Powerful page management system for Yii2 applications** - easily create, manage and display content pages with SEO-friendly URLs, Bootstrap 5 support and flexible configuration.
 
 <p align="center">
   <a href="#-features">Features</a> •
@@ -22,6 +20,15 @@ With this module, you can easily add, edit, and manage pages directly from your 
 </div>
 
 ---
+
+## 🌟 Features
+
+- **Simple CRUD operations** for managing pages
+- **SEO-friendly URLs** with customizable routing
+- **Bootstrap 5 support** out of the box (configurable)
+- **Easy integration** with existing Yii2 applications
+- **Migrations included** for quick setup
+- **Flexible URL management** with customizable routes
 
 ## 🚀 Installation
 
