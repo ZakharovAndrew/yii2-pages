@@ -11,9 +11,17 @@
 
 With this module, you can easily add, edit, and manage pages directly from your application's admin panel. The module provides an intuitive interface and all the necessary tools for efficient content management.
 
+<p align="center">
+  <a href="#-features">Features</a> •
+  <a href="#-installation">Installation</a> •
+  <a href="#-usage">Usage</a> •
+  <a href="#-contributing">Contributing</a> •
+  <a href="#-license">License</a>
+</p>
+
 </div>
 
-This extension allows you to add pages to your app.
+---
 
 ## 🚀 Installation
 
