@@ -1,8 +1,13 @@
 # Yii2 pages
 
+<div align="center">
+
 [![Latest Stable Version](https://poser.pugx.org/zakharov-andrew/yii2-pages/v/stable)](https://packagist.org/packages/zakharov-andrew/yii2-pages)
+[![Total Downloads](https://poser.pugx.org/zakharov-andrew/yii2-pages/downloads)](https://packagist.org/packages/zakharov-andrew/yii2-pages)
 [![License](https://poser.pugx.org/zakharov-andrew/yii2-pages/license)](https://packagist.org/packages/zakharov-andrew/yii2-pages)
 [![Yii2](https://img.shields.io/badge/Powered_by-Yii_Framework-green.svg?style=flat)](http://www.yiiframework.com/)
+
+</div>
 
 This extension allows you to add pages to your app.
 
