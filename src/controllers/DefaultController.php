@@ -27,8 +27,16 @@ class DefaultController extends Controller
                 'rules' => [
                     [
                        'allow' => true,
-                        'roles' => ['@'],
+                        'roles' => ['?', '@'],
                         'matchCallback' => function ($rule, $action) {
+                            if ($action->id == 'view') {
+                                return true;
+                            }
+                            
+                            if (Yii::$app->user->isGuest) {
+                                return false;
+                            }
+                            
                             return Yii::$app->user->identity->hasRole('admin');
                         }
                     ],
