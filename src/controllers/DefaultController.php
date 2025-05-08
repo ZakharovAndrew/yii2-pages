@@ -84,7 +84,7 @@ class DefaultController extends Controller
         $model = new Pages();
 
         if ($this->request->isPost && $model->load($this->request->post())) {
-            $model->url = ($model->url == '' ? Pages::generateUrl(trim($model->title)) : $model->url);
+            $model->url = ($model->url == '' ? Pages::translite(trim($model->title)) : $model->url);
             if ($model->save()) {
                 return $this->redirect(['view', 'url' => $model->url]);
             } else {
