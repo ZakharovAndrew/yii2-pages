@@ -53,4 +53,12 @@ return [
     'ip' => 'IP',
     'url' => 'URL',
     'object' => 'JSON',
+    
+    // SEO поля
+    'Meta Title' => 'Мета-заголовок (SEO)',
+    'Meta Description' => 'Мета-описание (SEO)',
+    'Meta Keywords' => 'Ключевые слова (SEO)',
+    'OG Title' => 'Заголовок для соцсетей (OpenGraph)',
+    'OG Description' => 'Описание для соцсетей (OpenGraph)',
+    'OG Image' => 'Изображение для соцсетей (OpenGraph)',
 ];
