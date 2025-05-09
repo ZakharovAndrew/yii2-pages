@@ -9,6 +9,9 @@ $this->title = $model->title;
 
 //SEO
 $this->registerMetaTag(['name' => 'title', 'content' => !empty($model->meta_title) ? $model->meta_title : $model->title]);
+if (!empty($model->meta_description)) {
+    $this->registerMetaTag(['name' => 'description', 'content' => $model->meta_description]);
+}
 ?>
 <div class="page">
 
