@@ -6,6 +6,9 @@ use yii\helpers\Html;
 /* @var $model ZakharovAndrew\pages\models\Pages */
 
 $this->title = $model->title;
+
+//SEO
+$this->registerMetaTag(['name' => 'title', 'content' => !empty($model->meta_title) ? $model->meta_title : $model->title]);
 ?>
 <div class="page">
 
