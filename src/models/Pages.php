@@ -13,6 +13,12 @@ use ZakharovAndrew\pages\Module;
  * @property string|null $url url
  * @property string|null $content
  * @property string $create_at
+ * @property string|null $meta_title
+ * @property string|null $meta_description
+ * @property string|null $meta_keywords
+ * @property string|null $og_title
+ * @property string|null $og_description
+ * @property string|null $og_image
  */
 class Pages extends \yii\db\ActiveRecord
 {
@@ -30,10 +36,10 @@ class Pages extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['content'], 'string'],
+            [['content', 'meta_description', 'og_description'], 'string', 'max' => 200],
             [['create_at'], 'safe'],
-            [['title'], 'string', 'max' => 200],
-            [['url'], 'string', 'max' => 255],
+            [['title', 'meta_title', 'og_title'], 'string', 'max' => 200],
+            [['url', 'meta_keywords', 'og_image'], 'string', 'max' => 255],
         ];
     }
 
@@ -48,6 +54,12 @@ class Pages extends \yii\db\ActiveRecord
             'url' => 'url',
             'content' => Module::t('Content'),
             'create_at' => 'Create At',
+            'meta_title' => Module::t('Meta Title'),
+            'meta_description' => Module::t('Meta Description'),
+            'meta_keywords' => Module::t('Meta Keywords'),
+            'og_title' => Module::t('OG Title'),
+            'og_description' => Module::t('OG Description'),
+            'og_image' => Module::t('OG Image'),
         ];
     }
     
