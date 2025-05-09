@@ -1,23 +1,28 @@
 <?php
 
 use yii\helpers\Html;
+use ZakharovAndrew\pages\Module;
 
 /* @var $this yii\web\View */
 /* @var $model ZakharovAndrew\pages\models\Pages */
 
-$this->title = $model->title;
+$this->title = !empty($model->meta_title) ? $model->meta_title : $model->title;
 
 //SEO
-$this->registerMetaTag(['name' => 'title', 'content' => !empty($model->meta_title) ? $model->meta_title : $model->title]);
 if (!empty($model->meta_description)) {
     $this->registerMetaTag(['name' => 'description', 'content' => $model->meta_description]);
 }
+if (!empty($model->meta_keywords)) {
+    $this->registerMetaTag(['name' => 'keywords', 'content' => $model->meta_keywords]);
+}
 ?>
 <div class="page">
+    <h1><?= Html::encode($model->title) ?></h1>
 
-
-	<h1><?= Html::encode($model->title) ?></h1>
-
-	<p><?= $model->content; ?></p>
-
+    <p><?= $model->content; ?></p>
 </div>
+<?php if (!Yii::$app->user->isGuest && Yii::$app->user->identity->hasRole('admin')) { ?>
+<p>
+    <?= Html::a(Module::t('Edit'), ['update', 'id' => $model->id], ['class' => 'btn btn-success']) ?>
+</p>
+<?php } ?>
