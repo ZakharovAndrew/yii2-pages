@@ -15,6 +15,9 @@ if (!empty($model->meta_description)) {
 if (!empty($model->meta_keywords)) {
     $this->registerMetaTag(['name' => 'keywords', 'content' => $model->meta_keywords]);
 }
+$this->registerMetaTag(['name' => 'og:title', 'content' => $this->title]);
+$this->registerMetaTag(['name' => 'og:type', 'content' => 'article']);
+
 ?>
 <div class="page">
     <h1><?= Html::encode($model->title) ?></h1>
