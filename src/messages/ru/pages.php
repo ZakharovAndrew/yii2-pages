@@ -53,6 +53,7 @@ return [
     'ip' => 'IP',
     'url' => 'URL',
     'object' => 'JSON',
+    'Edit' => 'Редактировать',
     
     // SEO поля
     'Meta Title' => 'Мета-заголовок (SEO)',
