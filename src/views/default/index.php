@@ -27,8 +27,6 @@ $this->params['breadcrumbs'][] = $this->title;
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
-
             'id',
             'title',
             [
@@ -43,9 +41,10 @@ $this->params['breadcrumbs'][] = $this->title;
                     return (mb_substr(strip_tags($model->content), 0, 50)).'...';
                 },
             ],
-            'datetime_at',
+            'create_at',
             [
                 'class' => ActionColumn::className(),
+                'template' => '{update} {delete}',
                 'urlCreator' => function ($action, $model, $key, $index, $column) {
                     return Url::toRoute([$action, 'id' => $model->id]);
                  }
