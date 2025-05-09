@@ -36,7 +36,7 @@ class Pages extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['content'], 'string', 'max' => 200],
+            [['content'], 'string'],
             [['create_at'], 'safe'],
             [['title', 'meta_title', 'og_title', 'meta_description', 'og_description'], 'string', 'max' => 200],
             [['url', 'meta_keywords', 'og_image'], 'string', 'max' => 255],
