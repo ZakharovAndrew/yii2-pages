@@ -8,7 +8,7 @@ use ZakharovAndrew\pages\Module;
 
 $this->title = Module::t('Update page') . ': ' . $model->title;
 $this->params['breadcrumbs'][] = ['label' => Module::t('Pages'), 'url' => ['index']];
-$this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'id' => $model->id]];
+$this->params['breadcrumbs'][] = ['label' => $model->title, 'url' => ['view', 'url' => $model->url]];
 ?>
 <div class="pages-update">
 
