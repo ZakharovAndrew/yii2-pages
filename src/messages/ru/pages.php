@@ -56,6 +56,13 @@ return [
     'Edit' => 'Редактировать',
     
     // SEO поля
+    'SEO Settings' => 'SEO Настройки',
+    'Title for search engines (50-60 characters)' => 'Заголовок для поисковиков (50-60 символов)',
+    'Page description for search engines (150-160 characters)' => 'Описание для поисковиков (150-160 символов)',
+    'Comma-separated keywords' => 'Ключевые слова через запятую',
+    'Social Media (OpenGraph)' => 'Социальные сети (OpenGraph)',
+    'Title for social networks' => 'Заголовок для соцсетей',
+    
     'Meta Title' => 'Мета-заголовок (SEO)',
     'Meta Description' => 'Мета-описание (SEO)',
     'Meta Keywords' => 'Ключевые слова (SEO)',
