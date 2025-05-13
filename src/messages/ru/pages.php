@@ -54,7 +54,6 @@ return [
     'url' => 'URL',
     'object' => 'JSON',
     'Edit' => 'Редактировать',
-    
     // SEO поля
     'SEO Settings' => 'SEO Настройки',
     'Title for search engines (50-60 characters)' => 'Заголовок для поисковиков (50-60 символов)',
