@@ -18,6 +18,10 @@ if (!empty($model->meta_keywords)) {
 $this->registerMetaTag(['name' => 'og:title', 'content' => $this->title]);
 $this->registerMetaTag(['name' => 'og:type', 'content' => 'article']);
 
+Yii::$app->view->registerLinkTag([
+    'rel' => 'canonical', 
+    'href' => Yii::$app->urlManager->createAbsoluteUrl(['/pages/default/view', 'url' => $model->url])
+]);
 ?>
 <div class="page">
     <h1><?= Html::encode($model->title) ?></h1>
