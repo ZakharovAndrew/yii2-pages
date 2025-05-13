@@ -61,6 +61,8 @@ return [
     'Comma-separated keywords' => 'Ключевые слова через запятую',
     'Social Media (OpenGraph)' => 'Социальные сети (OpenGraph)',
     'Title for social networks' => 'Заголовок для соцсетей',
+    'Description for social networks' => 'Описание для соцсетей',
+    'URL of image for social networks (1200x630 recommended)' => 'URL изображения для соцсетей (рекомендуется 1200x630)',
     
     'Meta Title' => 'Мета-заголовок (SEO)',
     'Meta Description' => 'Мета-описание (SEO)',
