@@ -6,6 +6,7 @@ use Yii;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
 use yii\web\Controller;
+use yii\web\NotFoundHttpException;
 use ZakharovAndrew\pages\models\Pages;
 use ZakharovAndrew\pages\models\PagesSearch;
 use ZakharovAndrew\pages\Module;
