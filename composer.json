@@ -2,7 +2,7 @@
   "name": "zakharov-andrew/yii2-pages",
   "description": "Yii2 Pages",
   "type": "yii2-extension",
-  "keywords": ["yii2", "extension", "module","settings", "admin", "yii 2"],
+  "keywords": ["yii2", "extension", "module","settings", "pages", "admin", "yii 2"],
   "license": "MIT",
   "authors": [
     {
