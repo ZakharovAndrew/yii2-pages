@@ -79,11 +79,12 @@ return [
 
 Add this to your main configuration's modules array
 
-```
+```php
     'modules' => [
         'pages' => [
             'class' => 'ZakharovAndrew\pages\Module',
             'bootstrapVersion' => 5, // if use bootstrap 5
+            'showTitle' => true, // display H1 headings (default - true)
         ],
         // ...
     ],
