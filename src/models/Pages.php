@@ -53,7 +53,7 @@ class Pages extends \yii\db\ActiveRecord
             'title' => Module::t('Title'),
             'url' => 'url',
             'content' => Module::t('Content'),
-            'create_at' => 'Create At',
+            'create_at' => Module::t('Created At'),
             'meta_title' => Module::t('Meta Title'),
             'meta_description' => Module::t('Meta Description'),
             'meta_keywords' => Module::t('Meta Keywords'),
