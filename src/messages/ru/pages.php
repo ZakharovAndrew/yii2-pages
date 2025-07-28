@@ -24,6 +24,7 @@ return [
     'Create {modelClass}' => 'Создание {modelClass}',
     'Create page' => 'Создать страницу',
     'Created' => 'Создано',
+    'Created At' => 'Дата создания',
     'Delete' => 'Удалить',
     'ID' => '',
     'Key' => 'Ключ',
