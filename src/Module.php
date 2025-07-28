@@ -6,7 +6,7 @@
  * Yii2 pages with database module with GUI manager supported.
  *  
  * @link https://github.com/ZakharovAndrew/yii2-pages/
- * @copyright Copyright (c) 2022 Zakharov Andrew
+ * @copyright Copyright (c) 2022-2025 Zakharov Andrew
  */
  
 namespace ZakharovAndrew\pages;
@@ -14,14 +14,22 @@ namespace ZakharovAndrew\pages;
 use Yii;
 
 /**
- * Class Module 
+ * Page Module 
  */
 class Module extends \yii\base\Module
-{    
+{
+    /**
+     * @var string version Bootstrap
+     */
     public $bootstrapVersion = '';
  
     public $useTranslite = false;
-    
+
+    /**
+     * @var bool show H1
+     */
+    public $showTitle = true;
+ 
     /**
      *
      * @var string source language for translation 
@@ -40,14 +48,19 @@ class Module extends \yii\base\Module
     public function init()
     {
         parent::init();
-        $this->registerTranslations();
+     
+        self::registerTranslations();
     }
     
     /**
      * Registers the translation files
      */
-    protected function registerTranslations()
+    protected static function registerTranslations()
     {
+        if (isset(Yii::$app->i18n->translations['extension/yii2-pages/*'])) {
+            return;
+        }
+     
         Yii::$app->i18n->translations['extension/yii2-pages/*'] = [
             'class' => 'yii\i18n\PhpMessageSource',
             'sourceLanguage' => $this->sourceLanguage,
@@ -72,6 +85,8 @@ class Module extends \yii\base\Module
      */
     public static function t($message, $params = [], $language = null)
     {
+        static::registerTranslations();
+     
         $category = 'pages';
         return Yii::t('extension/yii2-pages/' . $category, $message, $params, $language);
     }
