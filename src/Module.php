@@ -63,7 +63,7 @@ class Module extends \yii\base\Module
      
         Yii::$app->i18n->translations['extension/yii2-pages/*'] = [
             'class' => 'yii\i18n\PhpMessageSource',
-            'sourceLanguage' => $this->sourceLanguage,
+            'sourceLanguage' => 'en-US',
             'basePath' => '@vendor/zakharov-andrew/yii2-pages/src/messages',
             'on missingTranslation' => ['app\components\TranslationEventHandler', 'handleMissingTranslation'],
             'fileMap' => [
