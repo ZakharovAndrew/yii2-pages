@@ -24,7 +24,7 @@ Yii::$app->view->registerLinkTag([
 ]);
 ?>
 <div class="page">
-    <h1><?= Html::encode($model->title) ?></h1>
+    <?php if (Yii::$app->getModule('pages')->showTitle) {?><h1><?= Html::encode($this->title) ?></h1><?php } ?>
 
     <p><?= $model->content; ?></p>
 </div>
